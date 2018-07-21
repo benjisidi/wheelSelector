@@ -4,7 +4,7 @@ Wheel selector is a "wheel of fortune" style options spinner created using the p
 
 ## Usage
 
-Download the entire directory and either run something like [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) or open *index.html* in your favourite browser.
+Download the entire directory and either run something like [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) or open *index.html* in your favourite browser. Alternatively, simply go to the [github pages site](https://benjisidi.github.io/wheelSelector/).
 
 ## File Structure
 
