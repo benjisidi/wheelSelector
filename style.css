@@ -1,0 +1,26 @@
+body {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+@import "compass/css3";
+$flex-wrap-required: true;
+ul {
+  @include display-flex;
+  @include flex-wrap(wrap);
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+  @include flex(1 0);
+  min-width: 10em;
+  margin: .5em;
+}
+
+canvas {
+  margin:auto;
+}
