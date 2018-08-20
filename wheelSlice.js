@@ -8,7 +8,7 @@ function wheelSlice(xo, yo, rad, startA, endA, l = "", ts = 12, c = [255, 255, 2
   this.colour = c;
   this.textcolour = tc;
   this.txtSize = ts;
-  // We want to place the text 50% of the radius out.
+  // We want to place the text 40% of the radius out.
   this.txtPos = this.radius * .4;
 }
 
@@ -29,7 +29,8 @@ wheelSlice.prototype.showText = function () {
     this.txtSize = chord;
   }
 
-  // Now we adjust the text size till we can fit the label in the box
+  // Now we adjust the text size till we can
+  // comfortably fit the label in the box
   let oldTextSize = textSize();
   textSize(this.txtSize);
   while (textWidth(this.label) + 10 > this.radius - this.txtPos) {
@@ -49,7 +50,7 @@ wheelSlice.prototype.showText = function () {
     textY = this.txtPos / 2;
   }
 
-  // Set text size, translate origin to BL of text, rotate, draw text
+  // Set text size, translate origin to bottom left of text, rotate, draw text
   translate(textX, textY);
   rotate(this.startAngle + sliceAngle / 2);
   textAlign(CENTER, CENTER);
